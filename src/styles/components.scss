@@ -152,6 +152,47 @@
   }
 }
 
+register-head {
+  text-align: center;
+}
+
+#main-content form {
+  max-width: 400px;
+  margin: 0 auto;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 25px 10px 25px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #000000;
+  }
+
+  button :is(:where(.dark)) {
+    background-color: aquamarine;
+  }
+}
+
+
+
 // content style
 .content {
   @apply prose max-w-none;

@@ -3,16 +3,18 @@ import Layout from "../layouts/Base.astro";
 ---
 
 <Layout title="Register">
+  <register-head>
   <h1>Register</h1>
   <p>Already have an account? <a href="/signin">Sign in</a></p>
-  <form action="/api/auth/register" method="post">
+  </register-head>
+  <form class="default" action="/api/auth/register" method="post">
     <label for="email" for="email">Email</label>
     <input type="email" name="email" id="email" />
     <label for="password">Password</label>
     <input type="password" name="password" id="password" />
     <button type="submit">Register</button>
   </form>
-  <form id="acc-details">
+  <form class="default" id="acc-details">
     <label for="username" for="username">Username*</label>
     <input name="username" id="username" />
     <label for="country" for="country">Country of residence*</label>

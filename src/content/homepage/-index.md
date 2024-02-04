@@ -7,7 +7,7 @@ banner:
   button:
     enable: true
     label: "Register Now"
-    link: "https://github.com/zeon-studio/astroplate"
+    link: "./register"
 
 # Features
 features:
